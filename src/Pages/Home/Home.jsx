@@ -9,7 +9,7 @@ import Todo from '../../Components/Menu/Todo'
 
 const Home = () => {
 
-  const [select, setSelect] = useState('Explain code')
+  const [select, setSelect] = useState('Explain Code')
 
   return (
     <>

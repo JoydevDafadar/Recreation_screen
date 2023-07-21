@@ -1,0 +1,137 @@
+.nav{
+    position: relative;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.187);
+}
+.nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav .logo img{
+    width: 3rem;
+    height: 3rem;
+}
+.nav .logo h2{
+    margin-left: .5rem;
+    background: linear-gradient(90deg, #785EFB 0%, #71B6C0 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav .items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav .items ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav .items ul li{
+    text-decoration: none;
+    padding: .5rem 1rem;
+    margin: 0rem .5rem;
+    /* border: 1px solid rgba(0, 0, 0, 0.541); */
+    color: rgba(0, 0, 0, 0.516);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: .2s;
+}
+.nav .items ul li:hover,
+.nav .items ul li.active{
+    background: linear-gradient(90deg, #25C2A7 0%, #4ABF4D 100%);
+    color: white;
+}
+.nav .items button i{
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+.nav .items button{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #785EF9 0%, #381DC8 100%);
+    border: none;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.813);
+}
+.nav .first{
+    position: absolute;
+    z-index: -1;
+    left: 8rem;
+    top: 0;
+    height: 4rem;
+    width: 5rem;
+    /* width: 10px; */
+    /* color: blue; */
+}
+.nav .second{
+    position: absolute;
+    z-index: -1;
+    right: 3rem;
+    height: 4rem;
+    width: 7rem;
+    top: 0;
+}
+.nav .items .bar {
+    display: none;
+}
+
+
+@media screen and (max-width: 1001px) {
+    
+    .nav .items .bar {
+        display: block;
+        margin: 0rem 1rem;
+    }
+    .nav .items .bar i{
+        margin: 0;
+    }
+    .nav .items{
+        position: relative;
+    }
+    .nav .items ul{
+        position: absolute;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        top: -50rem;
+        right: 0;
+        /* height: 100vh; */
+        background-color: white;
+        box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.205);
+        padding: 0;
+        transition: .4s linear;
+    }
+    .nav .items ul.active{
+        top: 2.5rem;
+    }
+    .nav .items ul li {
+        margin: 1rem 3rem;
+    }
+  
+}
+@media screen and (max-width: 551px) {
+
+    .nav .items button {
+        padding: 0.5rem;
+    }
+
+    .nav .items .bar {
+        display: block;
+        margin: 0rem .2rem;
+    }
+    
+}
+@media screen and (max-width: 400px) {
+
+    .nav .items button{
+        display: none;
+    }
+    
+}

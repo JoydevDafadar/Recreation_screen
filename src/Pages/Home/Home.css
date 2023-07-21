@@ -1,0 +1,314 @@
+
+
+.main-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.third{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    width: 6rem;
+    height: 6rem;
+}
+.main-text h1{
+    font-size: 3.5rem;
+    margin: 1rem;
+    font-weight: 390;
+    background: linear-gradient(90deg, #3CD5BB 0%, #7A65F8 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.main-text p{
+    width: 40vw;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--main-font-color);
+}
+.main-text button{
+    font-size: 1rem;
+    padding: .6rem 3rem;
+    margin: .5rem 0rem 3rem 0rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #2AC1A2 0%,  #6B7AEA 100%);
+    color: rgba(255, 255, 255, 0.79);
+}
+.box{
+    background-color: white;
+    display: flex;
+    width: calc(100vw - 15rem - 15rem);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.187);
+    
+    /* align-items: center;
+    justify-content: center; */
+    /* flex-wrap: wrap; */
+}
+.box .box-item{
+    width: 50%;
+    /* height: 18rem; */
+    padding: 2rem 2rem;
+}
+.box .box-item:first-child{
+    border-right: 1px solid rgba(0, 0, 0, 0.187);
+}
+.box .box-item:last-child{
+    border-left: 1px solid rgba(0, 0, 0, 0.187);
+}
+.box .text h3{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: flex-start;
+}
+.box .text h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* line-height: 2rem; */
+    margin: 0rem;
+}
+.box .text i{
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    /* font-weight: 800; */
+}
+.box .text p{
+    margin: 0 0 1rem 0;
+    color: var(--main-font-color);
+    font-size: 1rem;
+}
+.box .code .function{
+    width: calc(100% - 1.6rem);
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    background-color: rgba(0, 0, 0, 0.084);
+    border-radius: 5px;
+    height: 6rem;
+}
+.box .code .function p{
+    margin: 0;
+    font-size: .9rem;
+    /* color: rgb(80, 154, 114); */
+}
+.box .code .function p:nth-child(2){
+    margin: 0rem 0rem 0rem 1rem;
+}
+.box .box-item:first-child button{
+    margin: 1.4rem 0rem 0rem 0rem;
+    padding: .5rem 1rem;
+    background: linear-gradient(90deg,#785EFA 0%, #381DC8 100%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.box .box-item button i{
+    margin-right: .5rem;
+}
+.code h5{
+    font-size: 1rem;
+    margin: .3rem 0;
+}
+
+.head h4{
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.head h4 i{
+    font-size: 1.4rem;
+    margin-right: .8rem;
+}
+.head p{
+    margin: 0;
+    color: var(--main-font-color);
+}
+.main ul {
+    list-style: none;
+    padding: 0;
+}
+.main ul li{
+    display: flex;
+    /* align-items: flex-start; */
+    font-size: 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.123);
+    padding: .8rem 0rem;
+    font-weight: 500;
+}
+.main ul li i{
+    margin-right: 1rem;
+    margin-top: .3rem;
+}
+.box-item:nth-child(2) button{
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+.menu-item {
+    width: calc(100% - 30rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu-item ul{
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+.menu-item ul li{
+    text-decoration: none;
+}
+.menu-item ul {
+    position: relative;
+}
+.menu-item ul::after{
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    font-size: .8rem;
+    opacity: 0.5;
+    color: white;
+    content: "Example of AI for Programing";
+}
+.menu-item ul li button{
+    padding: .5rem 1rem;
+    margin: 0rem .5rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+    color: blueviolet;
+    font-weight: 600;
+    opacity: 0.5;
+    transition: .2s;
+}
+.menu-item ul li button:hover,
+.menu-item ul li button.active{
+    opacity: 1;
+}
+.menu-item ul li button i{
+    margin-right: 1rem;
+}
+.menu-item p{
+    position: relative;
+    font-size: 1.5rem;
+    color: #fff;
+    opacity: 0.5;
+    margin: .8rem;
+}
+.menu-item p::after{
+    content: "Powered By";
+    position: absolute;
+    font-size: .8rem;
+    bottom: -25px;
+    left: 0;
+}
+.menu-item p i{
+    margin-right: .6rem;
+}
+.menu-box .btn{
+    width: calc(100% - 30rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-box .btn button {
+    padding: 1rem 1.2rem;
+    font-size: 1.1rem;
+    margin: 3rem 0rem 2rem 0rem;
+    color: blueviolet;
+    border-radius: 10px;
+    border: none;
+}
+.menu-box .btn button i{
+    margin-right: 1rem;
+}
+.menu-box{
+    position: relative;
+    z-index: 2;
+}
+.menu-box .bg{
+    position: absolute;
+    bottom: 0;
+    z-index: -2;
+    width: 100%;
+    height: 20rem;
+    background:linear-gradient(90deg, #795FFB 0%, #3A1FCA 100%);
+}
+.menu-box .bg img{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: -5rem;
+    width: 10rem;
+}
+
+
+
+@media screen and (max-width: 1351px) {
+  
+    .box {
+        width: calc(100% - 16rem);
+    }
+  
+    .menu-item {
+        width: calc(100% - 16rem);
+    }
+    .menu-box .btn{
+        width: calc(100% - 16rem);
+    }
+  
+  }
+  
+  @media screen and (max-width: 1151px) {
+
+    .main-text h1 {
+        text-align: center;
+    }
+    .box{
+        width: calc(100% - 8rem);
+    }
+    .menu-item {
+        width: calc(100% - 8rem);
+    }
+    .menu-box .btn{
+        width: calc(100% - 8rem);
+    }
+  
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .box .box-item{
+        width: auto;
+    }
+  
+  }
+  @media screen and (max-width: 600px) {
+
+    .box {
+        width: calc(100% - 1rem);
+    }
+    .menu-item {
+        width: calc(100% - 1rem);
+    }
+    .menu-box .btn{
+        width: calc(100% - 1rem);
+    }
+    .menu-item ul{
+        flex-wrap: wrap;
+    }
+    .menu-item ul li{
+        margin: 0.1rem 0rem;
+    }
+  
+  }

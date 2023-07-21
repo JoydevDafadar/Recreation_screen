@@ -1,3 +1,6 @@
+:root{
+  --main-font-color : rgba(0, 0, 0, 0.511);
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +13,46 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.p1{
+  padding: 0px 15rem;
+}
+.m1{
+  margin: 0px 15rem;
+}
+
+@media screen and (max-width: 1351px) {
+  
+  .p1{
+    padding: 0px 8rem;
+  }
+
+  .m1{
+    margin: 0px 8rem;
+  }
+
+}
+
+@media screen and (max-width: 1151px) {
+  
+  .p1{
+    padding: 0px 4rem;
+  }
+
+  .m1{
+    margin: 0px 4rem;
+  }
+
+}
+@media screen and (max-width: 551px) {
+  
+  .p1{
+    padding: 0px .5rem;
+  }
+
+  .m1{
+    margin: 0px .5rem;
+  }
+
 }
